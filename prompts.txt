@@ -1,0 +1,3 @@
+Una organización necesita difundir un evento tecnológico abierto a la comunidad. Este evento busca atraer estudiantes, profesionales y público general interesado en tecnología. En este evento se mostraran los proyectos ganadores de un concurso.
+Tu tarea consiste en construir un sitio web que permita comunicar esta actividad de manera clara, atractiva y organizada.
+El sitio no debe desarrollarse de una sola vez, sino que debe evolucionar en distintas etapas, incorporando mejoras progresivas.
