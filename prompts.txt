@@ -1,3 +1,8 @@
 Una organización necesita difundir un evento tecnológico abierto a la comunidad. Este evento busca atraer estudiantes, profesionales y público general interesado en tecnología. En este evento se mostraran los proyectos ganadores de un concurso.
 Tu tarea consiste en construir un sitio web que permita comunicar esta actividad de manera clara, atractiva y organizada.
 El sitio no debe desarrollarse de una sola vez, sino que debe evolucionar en distintas etapas, incorporando mejoras progresivas.
+Mejora visual El cliente considera que el sitio es funcional, pero necesita una mejor presentación.
+Debes:
+ mejorar el diseño visual,
+aplicar estilos CSS más trabajados,
+ mejorar la distribución del contenido. ahora qui vamos a mejorar el campo visual de la pagina agregale un nuevo fondo que valla con la pagina
