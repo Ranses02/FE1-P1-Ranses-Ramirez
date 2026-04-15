@@ -7,31 +7,144 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Evento Tecnológico Abierto a la Comunidad</h1>
+    <nav class="navbar" aria-label="Navegación principal">
+        <a href="#inicio" class="navbar-logo" aria-label="Inicio EventoTech">EventoTech</a>
+        <button class="navbar-toggle" aria-label="Abrir menú">&#9776;</button>
+        <ul class="navbar-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#expositores">Expositores</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#inscripcion">Inscripción</a></li>
+        </ul>
+    </nav>
+    <header id="inicio" class="hero-section">
+        <div class="hero-content">
+            <img src="banner-evento.jpg" alt="Banner Evento Tecnológico" class="hero-image">
+            <h1>Evento Tecnológico Abierto a la Comunidad</h1>
+            <p>¡Participa y conoce los proyectos ganadores del concurso tecnológico!</p>
+            <a href="#inscripcion" class="cta-button">Inscríbete Ahora</a>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="descripcion-section">
             <h2>Descripción</h2>
             <p>
                 Únete a nuestro evento tecnológico donde estudiantes, profesionales y público general podrán conocer los proyectos ganadores de nuestro concurso. ¡No te lo pierdas!
             </p>
         </section>
-        <section>
-            <h2>Detalles del Evento</h2>
+        <section id="actividades" class="actividades-section">
+            <h2>Actividades del Evento</h2>
             <ul>
-                <li><strong>Fecha:</strong> 15 de septiembre de 2024</li>
-                <li><strong>Hora:</strong> 10:00 AM - 5:00 PM</li>
-                <li><strong>Lugar:</strong> Auditorio Central, Ciudad Tecnológica</li>
+                <li>Charlas y conferencias sobre innovación tecnológica</li>
+                <li>Demostraciones de proyectos ganadores</li>
+                <li>Talleres prácticos para todas las edades</li>
+                <li>Zona de networking y oportunidades laborales</li>
             </ul>
         </section>
-        <section>
-            <h2>Proyectos Ganadores</h2>
-            <p>Próximamente se publicarán los proyectos destacados del concurso.</p>
+        <section id="beneficios" class="beneficios-section">
+            <h2>Beneficios de Asistir</h2>
+            <ul>
+                <li>Acceso a las últimas tendencias en tecnología</li>
+                <li>Certificado de participación</li>
+                <li>Oportunidad de interactuar con expertos y empresas</li>
+                <li>Participación en sorteos y premios</li>
+            </ul>
+        </section>
+        <section id="expositores" class="expositores-section">
+            <h2>Invitados y Expositores</h2>
+            <ul>
+                <li>
+                    <img src="ana-lopez.jpg" alt="Dra. Ana López" class="expositor-foto">
+                    <strong>Dra. Ana López</strong> – Experta en Inteligencia Artificial
+                </li>
+                <li>
+                    <img src="carlos-perez.jpg" alt="Ing. Carlos Pérez" class="expositor-foto">
+                    <strong>Ing. Carlos Pérez</strong> – Desarrollador de Software Senior
+                </li>
+                <li>
+                    <img src="maria-torres.jpg" alt="María Torres" class="expositor-foto">
+                    <strong>María Torres</strong> – Emprendedora tecnológica
+                </li>
+            </ul>
+        </section>
+        <section id="faq" class="faq-section">
+            <h2>Preguntas Frecuentes</h2>
+            <details>
+                <summary><strong>¿El evento tiene costo?</strong></summary>
+                <p>No, la entrada es gratuita.</p>
+            </details>
+            <details>
+                <summary><strong>¿Debo inscribirme previamente?</strong></summary>
+                <p>Sí, es necesario registrarse en el formulario de abajo.</p>
+            </details>
+            <details>
+                <summary><strong>¿Puedo llevar acompañantes?</strong></summary>
+                <p>Sí, el evento es abierto a todo público.</p>
+            </details>
+        </section>
+        <section id="inscripcion" class="inscripcion-section">
+            <h2>Inscripción</h2>
+            <form id="form-inscripcion" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required aria-required="true" placeholder="Tu nombre">
+                    <span class="error-message" id="error-nombre"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required aria-required="true" placeholder="tucorreo@ejemplo.com">
+                    <span class="error-message" id="error-email"></span>
+                </div>
+                <button type="submit" class="cta-button">Inscribirse</button>
+                <div id="form-success" class="form-success" style="display:none;">¡Inscripción exitosa! Te esperamos en el evento.</div>
+            </form>
         </section>
     </main>
     <footer>
-        <p>Contacto: info@eventotecnologico.com</p>
+        <div class="footer-content">
+            <p>Contacto: <a href="mailto:info@eventotecnologico.com">info@eventotecnologico.com</a></p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><img src="facebook.svg" alt="Facebook"></a>
+                <a href="#" aria-label="Twitter"><img src="twitter.svg" alt="Twitter"></a>
+                <a href="#" aria-label="LinkedIn"><img src="linkedin.svg" alt="LinkedIn"></a>
+            </div>
+            <p>&copy; 2024 EventoTech. Todos los derechos reservados.</p>
+        </div>
     </footer>
+    <script>
+        // Menú responsive
+        document.querySelector('.navbar-toggle').addEventListener('click', function() {
+            document.querySelector('.navbar-menu').classList.toggle('active');
+        });
+
+        // Validación de formulario
+        document.getElementById('form-inscripcion').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let valido = true;
+            const nombre = document.getElementById('nombre');
+            const email = document.getElementById('email');
+            const errorNombre = document.getElementById('error-nombre');
+            const errorEmail = document.getElementById('error-email');
+            errorNombre.textContent = '';
+            errorEmail.textContent = '';
+
+            if (nombre.value.trim().length < 3) {
+                errorNombre.textContent = 'Por favor, ingresa un nombre válido.';
+                valido = false;
+            }
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value.trim())) {
+                errorEmail.textContent = 'Por favor, ingresa un correo válido.';
+                valido = false;
+            }
+            if (valido) {
+                document.getElementById('form-success').style.display = 'block';
+                nombre.value = '';
+                email.value = '';
+            }
+        });
+    </script>
 </body>
 </html>

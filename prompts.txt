@@ -6,3 +6,12 @@ Debes:
  mejorar el diseño visual,
 aplicar estilos CSS más trabajados,
  mejorar la distribución del contenido. ahora qui vamos a mejorar el campo visual de la pagina agregale un nuevo fondo que valla con la pagina
+
+ 3. Incorporación de contenido
+Se requiere entregar más información para motivar la participación.
+Debes agregar nuevas secciones, por ejemplo:
+actividades del evento,
+beneficios de asistir,
+invitados o expositores,
+preguntas frecuentes,
+inscripción o contacto. aqui le pedi que me realice esta escrutura  
